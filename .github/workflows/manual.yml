@@ -30,7 +30,7 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
       
     - name: make artifact
-      run: cd ./ && pwd && tar -zcvf /tmp/artifact_test1.tgz ./ && ls -lhF ./
+      run: cd ./ && pwd && echo "test ${{ github.event.inputs.name }}" > ./test1.txt && tar -zcvf ./artifact_test1.tgz ./ && ls -lhF ./
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.3
