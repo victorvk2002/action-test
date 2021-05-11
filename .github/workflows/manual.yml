@@ -30,11 +30,11 @@ jobs:
       with:
         path: main
 
-#    - name: Checkout tools repo
-#      uses: actions/checkout@v2
-#      with:
-#        repository: victorvk2002/action-test
-#        path: action-test
+    - name: Checkout tools repo
+      uses: actions/checkout@v2
+      with:
+        repository: SpiderDAO/spider-wrt
+        path: spider-wrt
     
     - name: ls
       run: |
