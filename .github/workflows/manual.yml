@@ -25,7 +25,17 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: victorvk2002/action-test@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        path: main
+
+#    - name: Checkout tools repo
+#      uses: actions/checkout@v2
+#      with:
+#        repository: victorvk2002/action-test
+#        path: action-test
+    
     - name: ls
       run: ls -lhF
     # Runs a single command using the runners shell
