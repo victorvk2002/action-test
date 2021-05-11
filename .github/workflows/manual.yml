@@ -39,6 +39,8 @@ jobs:
     - name: ls
       run: |
         ls -lhF main/
+        apt update
+        apt install -y tree
         tree
     # Runs a single command using the runners shell
     - name: Send greeting
