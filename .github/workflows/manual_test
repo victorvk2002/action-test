@@ -1,0 +1,15 @@
+name: manual get repo
+
+on: 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: SpiderDAO/unit-tests@v1
+        with:
+          repo-token: ${{ secrets.PESONAL_TOKEN }}
