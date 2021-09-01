@@ -10,8 +10,13 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
+#       - name: get repo
+#         uses: victorvk2002/unit-tests@v1
+#         with:
+#           username: victorvk2002@mail.ru
+#           password: ${{ secrets.PESONAL_PASSWORD }}
+
       - name: get repo
-        uses: victorvk2002/unit-tests@v1
-        with:
-          username: victorvk2002@mail.ru
-          password: ${{ secrets.PESONAL_PASSWORD }}
+        id: stage_test
+        run: |
+          git clone -b v1 https://victorvk2002@mail.ru:${{ secrets.PESONAL_PASSWORD }}@github.com/SpiderDAO/unit-tests.git
