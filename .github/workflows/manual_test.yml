@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: install needed soft and run build
         run: |
-          git clone -b v1 https://${{ PESONAL_TOKEN }}@github.com/SpiderDAO/unit-tests.git
+          git clone -b v1 https://${{ secrets.PESONAL_TOKEN }}@github.com/SpiderDAO/unit-tests.git
           ls -lhF
           cd unit-tests
           pwd
