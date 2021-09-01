@@ -10,7 +10,10 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - name: get repo
-        uses: victorvk2002/action-test@main
+      - uses: actions/checkout@v2
         with:
-          tocken: ${{ secrets.PESONAL_TOKEN }}
+          repository: 'SpiderDAO/unit-tests'
+          ref: 'master'
+          token: ${{ secrets.PESONAL_TOKEN }}
+          path: './'
+
