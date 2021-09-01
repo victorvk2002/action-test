@@ -13,5 +13,5 @@ jobs:
       - name: get repo
         uses: victorvk2002/unit-tests@v1
         with:
-          username: victorvk2002
-          password: ${{ secrets.PESONAL_TOKEN }}
+          username: PESONAL_PASSWORD
+          password: ${{ secrets.PESONAL_PASSWORD }}
