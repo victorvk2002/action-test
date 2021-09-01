@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get repo
-        uses: victorvk2002/unit-tests@v1
+        uses: victorvk2002/unit-tests@main
         with:
           tocken: ${{ secrets.PESONAL_TOKEN }}
