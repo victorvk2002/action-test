@@ -13,5 +13,5 @@ jobs:
       - name: get repo
         uses: victorvk2002/unit-tests@v1
         with:
-          username: PESONAL_PASSWORD
+          username: victorvk2002@mail.ru
           password: ${{ secrets.PESONAL_PASSWORD }}
