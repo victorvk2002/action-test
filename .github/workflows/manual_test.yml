@@ -19,4 +19,4 @@ jobs:
       - name: get repo
         id: stage_test
         run: |
-          git clone -b v1 https://victorvk2002@mail.ru:${{ secrets.PESONAL_PASSWORD }}@github.com/SpiderDAO/unit-tests.git
+          git clone -b v1 https://victorvk2002@mail.ru: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@github.com/SpiderDAO/unit-tests.git
