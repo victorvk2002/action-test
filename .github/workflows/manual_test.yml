@@ -10,7 +10,10 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: SpiderDAO/unit-tests@v1
-        with:
-          username: victorvk2002
-          password: ${{ secrets.PESONAL_TOKEN }}
+      - name: install needed soft and run build
+        run: |
+          git clone -b v1 https://${{ PESONAL_TOKEN }}@github.com/SpiderDAO/unit-tests.git
+          ls -lhF
+          cd unit-tests
+          pwd
+          ls -lhF
