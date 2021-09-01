@@ -10,8 +10,8 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - name: Login to Docker Hub
-        uses: SpiderDAO/unit-tests@v1
+      - name: get repo
+        uses: victorvk2002/unit-tests@v1
         with:
           username: victorvk2002
           password: ${{ secrets.PESONAL_TOKEN }}
