@@ -16,4 +16,9 @@ jobs:
           token: ${{ secrets.PESONAL_TOKEN }}
           path: unit-tests
           ref: main
+      - run: |
+          pwd
+          ls -lhF
+          cd unit-tests
+          git status
 
