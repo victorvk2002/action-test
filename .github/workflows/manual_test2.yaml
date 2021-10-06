@@ -1,4 +1,4 @@
-name: manual get repo
+name: manual get DAO repo
 
 on: 
   workflow_dispatch:
