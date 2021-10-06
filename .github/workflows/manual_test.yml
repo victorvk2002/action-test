@@ -10,15 +10,10 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
-        with:
-          repository: victorvk2002/unit-tests
-          token: ${{ secrets.PESONAL_TOKEN }}
-          path: unit-tests
-          ref: main
       - run: |
+          git clone https://${{ secrets.PESONAL_TOKEN }}@github.com/SpiderDAO/unit-tests.git
           pwd
           ls -lhF
           cd unit-tests
           git status
-
+          ls -lhFa
