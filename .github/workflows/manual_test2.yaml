@@ -1,1 +1,23 @@
+name: manual get repo
 
+on: 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+        with:
+          repository: SpiderDAO/unit-tests
+          token: ${{ secrets.PESONAL_TOKEN }}
+          path: unit-tests
+          ref: main
+      - run: |
+          pwd
+          ls -lhF
+          cd unit-tests
+          git status
